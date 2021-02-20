@@ -1,0 +1,161 @@
+
+
+
+<!DOCTYPE html>
+<html>
+    <head><link rel="icon" href="https://i.ibb.co/0BCw9kK/IMG-20200805-WA0019.jpg" type="image/gif" sizes="16x16">
+        <title>Happy Birthday to my sister </title>
+          <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script> 
+    </head><style>
+        
+
+
+body {
+    margin:0;
+    padding:0;
+}
+.back {
+    width:100vw;
+    height:100vh;
+}
+.card {
+    width:330px;
+    height:460px;
+    position:absolute;
+    top:90px;
+    left:320px;
+    background-color:white;
+    background-color: rgba(255,120,120,0.1);
+   box-shadow:5px 3px 10px black;
+    border-radius:15px;
+    backdrop-filter:blur(20px);
+}
+.logo {
+    width:130px;
+    height:130px;
+    border-radius:50%;
+    margin-top:9px;
+    border:3px solid white;
+}
+.name {
+    color:white;
+    font-size:24px;
+    position:absolute;
+    top:150px;
+    left:70px;
+}
+.comp {
+    color:yellow;
+    font-size:24px;
+    position:absolute;
+    top:190px;
+    left:30px;
+}
+.faf{
+
+position:absolute ;
+    animation:fal 3s infinite linear;
+    left:30px;
+}
+.fas{
+
+position:absolute ;
+    animation:fal 6s infinite linear;
+    left:90px;
+}
+.fat{
+
+position:absolute ;
+    animation:fal 5s infinite linear;
+    left:145px;
+}
+.fao{
+
+position:absolute ;
+    animation:fal 9s infinite linear;
+    left:182px;
+}
+.fai{
+
+position:absolute ;
+    animation:fal 5s infinite linear;
+    left:230px;
+}
+.fax{
+
+position:absolute ;
+    animation:fal 7s infinite linear;
+    left:277px;
+}
+.fav{
+
+position:absolute ;
+    animation:fal 8s infinite linear;
+    left:112px;
+}
+.fae{
+
+position:absolute ;
+    animation:fal 4s infinite linear;
+    left:100px;
+}
+
+@keyframes fal{
+    0%{transform:rotate(0deg);
+       top:-10%;
+    }
+    100%{transform:rotate(720deg);
+         top:100vh;
+    }
+}
+
+.cake {
+    font-size:150px;
+    position:absolute;
+    left:300px;
+    top:130px;
+}
+
+    </style>
+    <body id="clk">
+    <script>
+    
+        Swal.fire('🎂🎂Happy Bday Didi\n Having a sister is like having a best friend you can’t get rid of.You know whatever you do, they’ll still be there🎂🎂')
+  </script>
+  <script>
+      
+   $('#clk').click(function(){
+        var audio = $('.song')[0];
+        try{
+        navigator.vibrate(20);}
+        catch(Exception){
+            console.log("Vibrate mode is not supported")
+        }
+        audio.play();        
+});
+  </script><center>
+        <img src="https://i.ibb.co/NxbZtTq/Be-Funky-photo.jpg" alt="Be-Funky-photo" class="back">
+        <div class="card">
+          <center> <img src="https://github.com/kabir01arya/kabir-holi_project/raw/main/IMG_20210220_173846.jpg" alt="sister" class="logo">
+              <link href='https://fonts.googleapis.com/css?family=Berkshire Swash' rel='stylesheet'>
+    <p><font face="Berkshire Swash" class="name">Shukalpa Singh</font></p>
+    <link href='https://fonts.googleapis.com/css?family=Berkshire Swash' rel='stylesheet'>
+    <p><font face="Berkshire Swash" class="comp">Happy Birthday to my Sister</font></p>
+          </center>
+          
+    <p class="cake">🎂</p>
+        </div>
+        <p class="faf">🍰</p>
+      <p class="fas">🍩</p>
+      <p class="fat">🎂</p>
+      <p class="fao">🥧</p>
+      <p class="fai">🍮</p>
+      <p class="fax">🍰</p>
+      <p class="fav">🍩</p>
+      <p class="fae">🎂</p>
+        <audio class="song" autoplay loop>
+   <source src="https://www.8notes.com/school/mp32/piano/happy_birthday.mp3"></audio>
+   <footer>&copy;Kabir Arya</footer></center>
+    </body>
+</html>
