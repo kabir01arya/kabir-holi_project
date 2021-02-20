@@ -1,0 +1,122 @@
+
+
+
+<!DOCTYPE html>
+<html>
+    <head><link rel="icon" href="https://i.ibb.co/0BCw9kK/IMG-20200805-WA0019.jpg" type="image/gif" sizes="16x16">
+        <title>Happy New year 🇮🇳🤝🇮🇷 </title>
+          <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    </head><style>
+
+
+
+body {
+    margin:0;
+    padding:0;
+
+
+    background-image:url("https://github.com/kabir01arya/festival/raw/main/images.jpg");
+    background-size:cover;
+
+ background-position:center;
+
+ background-attachment:fixed;
+}
+.logo {
+    width:130px;
+    height:130px;
+    border-radius:50%;
+    margin-top:9px;
+    border:3px solid white;
+}
+.card {
+    width:530px;
+    height:960px;
+    position:absolute;
+    top:70px;
+    left:300px;
+    background-color:white;
+    background-color: rgba(255,120,120,0.1);
+   box-shadow:5px 3px 10px black;
+    border-radius:15px;
+    backdrop-filter:blur(20px);
+}
+.logo {
+    width:130px;
+    height:130px;
+    border-radius:50%;
+    margin-top:9px;
+    border:3px solid white;
+}
+.name {
+    color:white;
+    font-size:24px;
+    position:absolute;
+    top:1px;
+    left:120px;
+}
+.comp {
+    color:black;
+    font-size:24px;
+    position:absolute;
+    top:190px;
+    left:30px;
+}
+#countdown{
+color:yellow;
+    font-size:24px;
+    position:absolute;
+    bottom:100px;
+    left:30px;}
+
+
+    </style>
+    <body id="clk">
+    <script>
+
+        Swal.fire('Happy Nowruz\n Nowruz is two-week celebration that marks the beginning of the New Year in Iran ')
+  </script>
+  <script>
+
+   $('#clk').click(function(){
+        var audio = $('.song')[0];
+        try{
+        navigator.vibrate(20);}
+        catch(Exception){
+            console.log("Vibrate mode is not supported")
+        }
+    audio.play();
+});
+
+  </script><center>
+        
+        <div class="card">
+          <font>
+              <link href='https://fonts.googleapis.com/css?family=Berkshire Swash' rel='stylesheet'>
+    <p><font face="Berkshire Swash" class="name">Nowruz</font></p><img src="https://i.ibb.co/31Z0sjs/Nowruz-Mubarak-messages-1-380x214.jpg" alt="sister" class="logo">
+    <link href='https://fonts.googleapis.com/css?family=Berkshire Swash' rel='stylesheet'>
+    <p><font face="Berkshire Swash" class="comp"><h1>🇮🇳🤝🇮🇷<br>Nowruz is two-week celebration that marks the beginning of the New Year in Iran's official Solar Hejri calendar. The celebration includes four public holidays from the first to the fourth day of Farvardin, the first month of the Iranian calendar, usually beginning on March 21.
+        Nowruz is considered the most important national holiday in Iran. It marks the beginning of a new solar year and the arrival of spring. ... Some people say that it's the 5774th time that Iranians across the world have celebrated the ancient Persian New Year festival.<br>Countdown for Nowruz..</h1></p><div id="countdown"></div></font>
+          </center>
+
+    <p class="cake"></p>
+        </div>
+
+        <audio class="song" autoplay loop>
+   <source src="https://github.com/kabir01arya/festival/raw/main/Janan_20210220204914.mp3"></audio>
+   <footer>&copy;Kabir Arya</footer></center>
+    <script>
+        function countdownTimer() {
+const difference = +new Date("2021-03-21 24:0:00") - +new Date();
+let remaining = "Happy Holi..";
+
+if (difference > 0) {
+ const parts = { Days: Math.floor(difference / (1000 * 60 * 60 * 24)), Hours: Math.floor((difference / (1000 * 60 * 60)) % 24), Minutes: Math.floor((difference / 1000 / 60) % 60), Seconds: Math.floor((difference / 1000) % 60) };
+remaining = Object.keys(parts) .map(part => {
+ if (!parts[part]) return;
+return `${parts[part]} ${part}`; }) .join(" "); } document.getElementById("countdown").innerHTML = remaining; } countdownTimer(); setInterval(countdownTimer, 1000);
+
+    </script>
+    </body>
+</html>
